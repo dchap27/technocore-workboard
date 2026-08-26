@@ -10,8 +10,9 @@ claim or the quality of work.
 
 ## Status
 
-Pre-alpha. The first milestone defines and tests the version-one event format.
-No network writes or identity handling have been implemented yet.
+Pre-alpha. Version-one event validation and offline verification of signed
+Ed25519 `did:key` events are implemented and tested. No network writes or
+private-key loading have been implemented yet.
 
 ## Principles
 
@@ -27,6 +28,8 @@ No network writes or identity handling have been implemented yet.
 - `docs/protocol-v1.md` — normative event format and state rules.
 - `docs/threat-model.md` — trust boundaries and non-goals.
 - `src/technocore_workboard/domain/` — canonical encoding and validation.
+- `src/technocore_workboard/identity/` — public `did:key` decoding only.
+- `src/technocore_workboard/technocore/` — signed-event verification.
 - `tests/` — protocol conformance tests.
 
 ## Development
