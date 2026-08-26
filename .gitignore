@@ -1,0 +1,25 @@
+# Local Python environments and tools
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local application state
+var/
+*.sqlite3
+*.db
+.env
+
+# Identity material and encrypted backups must never enter source control.
+identity.pem
+*.pem
+*.key
+*.gpg
+*.asc
+
+# Editor and operating-system files
+.DS_Store
+.idea/
+.vscode/
